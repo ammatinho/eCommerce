@@ -27,7 +27,7 @@ function checkFileType(file, cb) {
   }
 }
 
-const ulpoad = multer({
+const upload = multer({
   storage,
   fileFilter: function (req, file, cb) {
     checkFileType(file, cb)
