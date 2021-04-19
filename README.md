@@ -11,6 +11,7 @@
 •	Product search, carousel & pagination
 
 
+
 Functionality:
 •	Full featured shopping cart
 
@@ -37,6 +38,7 @@ Functionality:
 •	PayPal / credit card integration
 
 •	Custom database seeder script
+
 
 
 Topics covered/accomplished:
@@ -71,7 +73,9 @@ Topics covered/accomplished:
 •	Project deployment
 
 
+
 Visit my project here - https://ecommerceforshop.herokuapp.com
+
 
 
 Technologies used:
