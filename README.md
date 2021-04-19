@@ -11,7 +11,7 @@
 •	Product search, carousel & pagination
 
 
-
+#
 Functionality:
 •	Full featured shopping cart
 
