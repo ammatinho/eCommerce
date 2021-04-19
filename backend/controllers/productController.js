@@ -1,5 +1,6 @@
 import asyncHandler from 'express-async-handler'
 import Product from '../models/productModel.js'
+import Order from '../models/orderModel.js'
 
 // @description     Fetch all products
 // @route           GET /api/products
@@ -115,7 +116,23 @@ const createProductReview = asyncHandler(async (req, res) => {
 
   const product = await Product.findById(req.params.id)
 
+  const orders = await Order.find({ user: req.user._id })
+
+  const ordersItems = [].concat.apply(
+    [],
+    orders.map((order) =>
+      order.orderItems.map((item) => item.product.toString())
+    )
+  )
+
   if (product) {
+    const hasBought = ordersItems.includes(product._id.toString())
+
+    if (!hasBought) {
+      res.status(400)
+      throw new Error('Only purchased products can be reviewed')
+    }
+
     const alreadyReviewed = product.reviews.find(
       (review) => review.user.toString() === req.user._id.toString()
     )
@@ -141,7 +158,7 @@ const createProductReview = asyncHandler(async (req, res) => {
       product.reviews.length
 
     await product.save()
-    res.status(201).json({ message: 'Review added ' })
+    res.status(201).json({ message: 'Review added' })
   } else {
     res.status(404)
     throw new Error('Product not found')
