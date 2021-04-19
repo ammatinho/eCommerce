@@ -9,8 +9,6 @@
 •	Product rating & review system
 
 •	Product search, carousel & pagination
-
-
 #
 Functionality:
 •	Full featured shopping cart
@@ -38,9 +36,7 @@ Functionality:
 •	PayPal / credit card integration
 
 •	Custom database seeder script
-
-
-
+#
 Topics covered/accomplished:
 •	React with Functional Components & Hooks
 
@@ -71,13 +67,9 @@ Topics covered/accomplished:
 •	Environment variables
 
 •	Project deployment
-
-
-
+#
 Visit my project here - https://ecommerceforshop.herokuapp.com
-
-
-
+#
 Technologies used:
 
 < HTML, CSS, Javascript | MERN Stack: MongoDB, Express, React, Node.js />
