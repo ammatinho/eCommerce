@@ -73,4 +73,3 @@ Visit my project here - https://ecommerceforshop.herokuapp.com
 Technologies used:
 
 < HTML, CSS, Javascript | MERN Stack: MongoDB, Express, React, Node.js />
-
