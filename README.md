@@ -11,6 +11,7 @@
 •	Product search, carousel & pagination
 #
 Functionality:
+
 •	Full featured shopping cart
 
 •	Product reviews and ratings
@@ -38,6 +39,7 @@ Functionality:
 •	Custom database seeder script
 #
 Topics covered/accomplished:
+
 •	React with Functional Components & Hooks
 
 •	React router
